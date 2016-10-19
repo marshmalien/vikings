@@ -2,5 +2,18 @@
 %html(lang='en')
   %head
     %meta(charset='UTF-8')
-    %meta(content="width=device-width, initial-scale=1" name="viewport")
+    %meta(content='width=device-width, initial-scale=1' name='viewport')
     %title Vikings in HAML
+    %link(rel='stylesheet' href='lib/styles/main.min.css')
+  %body
+    .container
+      %section.top-container
+        %nav
+          %ul
+            %li(data-id='about') About
+            %li(data-id='seasons') Seasons
+            %li(data-id='characters') Characters
+        %video(autoplay loop)
+          %source(src='video/sky-loop.mp4' type='video/mp4')
+          Your browser does not support the video tag. Womp.
+        %img.wallpaper(src='images/vikings-promo.jpg' alt='Vikings on History')

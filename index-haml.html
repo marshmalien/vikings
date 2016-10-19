@@ -4,5 +4,24 @@
     <meta charset='UTF-8'>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
     <title>Vikings in HAML</title>
+    <link href='lib/styles/main.min.css' rel='stylesheet'>
   </head>
+  <body>
+    <div class='container'>
+      <section class='top-container'>
+        <nav>
+          <ul>
+            <li data-id='about'>About</li>
+            <li data-id='seasons'>Seasons</li>
+            <li data-id='characters'>Characters</li>
+          </ul>
+        </nav>
+        <video autoplay loop>
+          <source src='video/sky-loop.mp4' type='video/mp4'>
+          Your browser does not support the video tag. Womp.
+        </video>
+        <img alt='Vikings on History' class='wallpaper' src='images/vikings-promo.jpg'>
+      </section>
+    </div>
+  </body>
 </html>
